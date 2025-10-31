@@ -13,3 +13,11 @@ let getJohnProfile = () => {
 };
 
 // Start coding here
+function displayJohnProfile(data) {
+  console.log(data);
+};
+function displayError(error) {
+  console.log(error);
+}
+
+getJohnProfile().then(displayJohnProfile).catch(displayError);
